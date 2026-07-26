@@ -1,0 +1,13 @@
+# Railway/Nixpacks: this monorepo uses npm (package-lock.json), not pnpm.
+[variables]
+NIXPACKS_NODE_PACKAGE_MANAGER = "npm"
+
+[phases.install]
+cmds = ["npm install"]
+
+# API runs via tsx — no compile step required for deploy.
+[phases.build]
+cmds = ["npm install"]
+
+[start]
+cmd = "npm run start:api"
