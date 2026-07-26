@@ -1,0 +1,23 @@
+{
+  "name": "@nets/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=../../.env --import tsx --watch src/index.ts",
+    "build": "tsc",
+    "start": "node --import tsx src/index.ts"
+  },
+  "dependencies": {
+    "@nets/db": "file:../../packages/db",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@fastify/cors": "^10.0.2",
+    "drizzle-orm": "^0.39.3",
+    "fastify": "^5.2.1",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}

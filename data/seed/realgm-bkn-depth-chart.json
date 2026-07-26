@@ -1,0 +1,146 @@
+[
+  {
+    "season": "2026-27",
+    "roleLabel": "Starters",
+    "roleOrder": 0,
+    "position": "PG",
+    "displayName": "E. Demin",
+    "slugFullName": "Egor Demin",
+    "realgmPlayerId": "176500"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Starters",
+    "roleOrder": 0,
+    "position": "SG",
+    "displayName": "T. Mann",
+    "slugFullName": "Terance Mann",
+    "realgmPlayerId": "31607"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Starters",
+    "roleOrder": 0,
+    "position": "SF",
+    "displayName": "M. Porter, Jr.",
+    "slugFullName": "Michael Porter Jr.",
+    "realgmPlayerId": "26980"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Starters",
+    "roleOrder": 0,
+    "position": "PF",
+    "displayName": "J. Randle",
+    "slugFullName": "Julius Randle",
+    "realgmPlayerId": "15359"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Starters",
+    "roleOrder": 0,
+    "position": "C",
+    "displayName": "D. Wolf",
+    "slugFullName": "Danny Wolf",
+    "realgmPlayerId": "176501"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Rotation",
+    "roleOrder": 1,
+    "position": "PG",
+    "displayName": "N. Traore",
+    "slugFullName": "Nolan Traore",
+    "realgmPlayerId": "176502"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Rotation",
+    "roleOrder": 1,
+    "position": "SG",
+    "displayName": "D. Powell",
+    "slugFullName": "Drake Powell",
+    "realgmPlayerId": "176503"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Rotation",
+    "roleOrder": 1,
+    "position": "SF",
+    "displayName": "K. Ellis",
+    "slugFullName": "Keon Ellis",
+    "realgmPlayerId": "176504"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Rotation",
+    "roleOrder": 1,
+    "position": "PF",
+    "displayName": "N. Clowney",
+    "slugFullName": "Noah Clowney",
+    "realgmPlayerId": "162215"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Rotation",
+    "roleOrder": 1,
+    "position": "C",
+    "displayName": "D. Sharpe",
+    "slugFullName": "DayRon Sharpe",
+    "realgmPlayerId": "135668"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Rotation",
+    "roleOrder": 2,
+    "position": "PG",
+    "displayName": "B. Saraf",
+    "slugFullName": "Ben Saraf",
+    "realgmPlayerId": "176505"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Rotation",
+    "roleOrder": 2,
+    "position": "PF",
+    "displayName": "J. Minott",
+    "slugFullName": "Josh Minott",
+    "realgmPlayerId": "176506"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Lim PT",
+    "roleOrder": 3,
+    "position": "SG",
+    "displayName": "M. Brown Jr.",
+    "slugFullName": "Mikel Brown Jr.",
+    "realgmPlayerId": "176507"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Lim PT",
+    "roleOrder": 3,
+    "position": "SF",
+    "displayName": "T. Bilodeau",
+    "slugFullName": "Tyler Bilodeau",
+    "realgmPlayerId": "176508"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Lim PT",
+    "roleOrder": 3,
+    "position": "PF",
+    "displayName": "C. Johnson",
+    "slugFullName": "Chaney Johnson",
+    "realgmPlayerId": "176509"
+  },
+  {
+    "season": "2026-27",
+    "roleLabel": "Lim PT",
+    "roleOrder": 3,
+    "position": "C",
+    "displayName": "J. Jefferson",
+    "slugFullName": "Joshua Jefferson",
+    "realgmPlayerId": "176510"
+  }
+]

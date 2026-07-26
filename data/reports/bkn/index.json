@@ -1,0 +1,16 @@
+{
+  "reports": [
+    {
+      "id": "post-trade-cap-posture",
+      "title": "Post-Randle Trade – Capped Out | 1 Open Spot | Randle Trade Restriction",
+      "file": "post-trade-cap-posture.md",
+      "asOf": "2026-07-25"
+    },
+    {
+      "id": "key-decisions-remaining-summer",
+      "title": "Key Decisions – Remaining Summer",
+      "file": "key-decisions-remaining-summer.md",
+      "asOf": "2026-07-25"
+    }
+  ]
+}

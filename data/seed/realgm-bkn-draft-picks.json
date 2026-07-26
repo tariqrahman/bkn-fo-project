@@ -1,0 +1,351 @@
+{
+  "years": [
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033
+  ],
+  "entries": [
+    {
+      "draftYear": 2027,
+      "round": 1,
+      "sortOrder": 0,
+      "label": "LF: BKN/HOU",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2027,
+      "round": 1,
+      "sortOrder": 1,
+      "label": "NYK",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2028,
+      "round": 1,
+      "sortOrder": 0,
+      "label": "MF: BKN/NYK/PHI (P1-8)/PHX",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": [
+        2,
+        3
+      ]
+    },
+    {
+      "draftYear": 2028,
+      "round": 1,
+      "sortOrder": 1,
+      "label": "3MF: BKN/NYK/PHI (P1-8)/PHX",
+      "starred": true,
+      "isTraded": false,
+      "noteRefs": [
+        2,
+        4
+      ]
+    },
+    {
+      "draftYear": 2029,
+      "round": 1,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2029,
+      "round": 1,
+      "sortOrder": 1,
+      "label": "NYK",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2029,
+      "round": 1,
+      "sortOrder": 2,
+      "label": "LF: DAL/HOU/PHX",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2030,
+      "round": 1,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2031,
+      "round": 1,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2031,
+      "round": 1,
+      "sortOrder": 1,
+      "label": "NYK",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2032,
+      "round": 1,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2032,
+      "round": 1,
+      "sortOrder": 1,
+      "label": "DEN",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2033,
+      "round": 1,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2027,
+      "round": 2,
+      "sortOrder": 0,
+      "label": "To DET/WAS",
+      "starred": false,
+      "isTraded": true,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2027,
+      "round": 2,
+      "sortOrder": 1,
+      "label": "LAL",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": [
+        1
+      ]
+    },
+    {
+      "draftYear": 2028,
+      "round": 2,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2028,
+      "round": 2,
+      "sortOrder": 1,
+      "label": "PHI",
+      "starred": true,
+      "isTraded": false,
+      "noteRefs": [
+        2
+      ]
+    },
+    {
+      "draftYear": 2028,
+      "round": 2,
+      "sortOrder": 2,
+      "label": "ATL",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2028,
+      "round": 2,
+      "sortOrder": 3,
+      "label": "MEM",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2029,
+      "round": 2,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2029,
+      "round": 2,
+      "sortOrder": 1,
+      "label": "DAL",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2029,
+      "round": 2,
+      "sortOrder": 2,
+      "label": "GSW",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2029,
+      "round": 2,
+      "sortOrder": 3,
+      "label": "MEM",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2030,
+      "round": 2,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2030,
+      "round": 2,
+      "sortOrder": 1,
+      "label": "BOS",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2030,
+      "round": 2,
+      "sortOrder": 2,
+      "label": "DAL",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2030,
+      "round": 2,
+      "sortOrder": 3,
+      "label": "LAL",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2031,
+      "round": 2,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2031,
+      "round": 2,
+      "sortOrder": 1,
+      "label": "LAL",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2032,
+      "round": 2,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2032,
+      "round": 2,
+      "sortOrder": 1,
+      "label": "DEN",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2032,
+      "round": 2,
+      "sortOrder": 2,
+      "label": "MIA",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2032,
+      "round": 2,
+      "sortOrder": 3,
+      "label": "TOR",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    },
+    {
+      "draftYear": 2033,
+      "round": 2,
+      "sortOrder": 0,
+      "label": "Own",
+      "starred": false,
+      "isTraded": false,
+      "noteRefs": []
+    }
+  ],
+  "tradeableByRound": {
+    "1": 10,
+    "2": 19
+  },
+  "notes": [
+    {
+      "noteNumber": 1,
+      "noteText": "LAL 2027 second round pick (if LAL 2027 first round pick is 5-30)"
+    },
+    {
+      "noteNumber": 2,
+      "noteText": "PHI protected 2028 first round pick (P1-8 in 2028; else PHI 2028 second round pick and $2M)"
+    },
+    {
+      "noteNumber": 3,
+      "noteText": "Most favorable of (a) BKN 2028 first round pick, (b) NYK 2028 first round pick, (c) PHI 2028 first round pick (P1-8), and (d) PHX 2028 first round pick"
+    },
+    {
+      "noteNumber": 4,
+      "noteText": "If PHI conveys a first-allowable pick in 2028, PHI pick is 9-30, and PHI pick is third most favorable of (1) BKN 2028 first round pick, (2) NYK 2028 first round pick, (3) PHI 2028 first round pick, and (4) PHX 2028 first round pick, then (a) third most favorable of (i) BKN 2028 first round pick, (ii) NYK 2028 first round pick, (iii) PHI 2028 first round pick, and (iv) PHX 2028 first round pick; else if PHI conveys a first-allowable pick in 2028 and PHI pick is 9-30, then (b) second most favorable of (i) BKN 2028 first round pick, (ii) NYK 2028 first round pick, (iii) PHI 2028 first round pick, and (iv) PHX 2028 first round pick; else (c) none"
+    }
+  ]
+}

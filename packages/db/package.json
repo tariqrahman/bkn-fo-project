@@ -1,0 +1,37 @@
+{
+  "name": "@nets/db",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts",
+    "./cap-metrics": "./src/cap-metrics.ts",
+    "./compute-cap-room": "./src/compute-cap-room.ts",
+    "./contract-types": "./src/contract-types.ts",
+    "./media-urls": "./src/media-urls.ts",
+    "./nba-player-id": "./src/nba-player-id.ts",
+    "./parse-realgm-depth-chart": "./src/parse-realgm-depth-chart.ts",
+    "./parse-realgm-draft-picks": "./src/parse-realgm-draft-picks.ts",
+    "./match-realgm-name": "./src/match-realgm-name.ts"
+  },
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "node --env-file=../../.env --import tsx src/migrate.ts",
+    "ingest": "node --env-file=../../.env --import tsx src/ingest.ts",
+    "ingest:cap": "node --env-file=../../.env --import tsx src/ingest-spotrac-cap.ts",
+    "ingest:depth": "node --env-file=../../.env --import tsx src/ingest-realgm-depth-chart.ts",
+    "ingest:draft": "node --env-file=../../.env --import tsx src/ingest-realgm-draft-picks.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.39.3",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "drizzle-kit": "^0.30.4",
+    "tsx": "^4.19.2"
+  }
+}

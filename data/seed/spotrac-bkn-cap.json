@@ -1,0 +1,25 @@
+[
+  { "metric": "salary_cap", "season": "2026-27", "amountCents": 16496100000 },
+  { "metric": "salary_cap", "season": "2027-28", "amountCents": 17403400000 },
+  { "metric": "salary_cap", "season": "2028-29", "amountCents": 18273600000 },
+  { "metric": "salary_cap", "season": "2029-30", "amountCents": 19187300000 },
+  { "metric": "salary_cap", "season": "2030-31", "amountCents": 20146700000 },
+
+  { "metric": "luxury_tax", "season": "2026-27", "amountCents": 20042800000 },
+  { "metric": "luxury_tax", "season": "2027-28", "amountCents": 21145200000 },
+  { "metric": "luxury_tax", "season": "2028-29", "amountCents": 22202500000 },
+  { "metric": "luxury_tax", "season": "2029-30", "amountCents": 23312600000 },
+  { "metric": "luxury_tax", "season": "2030-31", "amountCents": 24478300000 },
+
+  { "metric": "first_apron", "season": "2026-27", "amountCents": 20901500000 },
+  { "metric": "first_apron", "season": "2027-28", "amountCents": 22051200000 },
+  { "metric": "first_apron", "season": "2028-29", "amountCents": 23153800000 },
+  { "metric": "first_apron", "season": "2029-30", "amountCents": 24311500000 },
+  { "metric": "first_apron", "season": "2030-31", "amountCents": 25527100000 },
+
+  { "metric": "second_apron", "season": "2026-27", "amountCents": 22168600000 },
+  { "metric": "second_apron", "season": "2027-28", "amountCents": 23387900000 },
+  { "metric": "second_apron", "season": "2028-29", "amountCents": 24557300000 },
+  { "metric": "second_apron", "season": "2029-30", "amountCents": 25785200000 },
+  { "metric": "second_apron", "season": "2030-31", "amountCents": 27074500000 }
+]
