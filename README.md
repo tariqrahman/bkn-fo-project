@@ -12,7 +12,7 @@ Internal tooling foundation for Brooklyn Nets front office data, starting with t
 ## Prerequisites
 
 - Node.js 20+
-- npm or pnpm
+- npm
 - A [Supabase](https://supabase.com) project (free tier is fine)
 
 ---
@@ -35,17 +35,15 @@ Do **not** use `db.[project-ref].supabase.co` on most networks — it is IPv6-on
 
 ### 3. Add it to this repo
 
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and paste your connection string:
+Create `.env` in the repo root:
 
 ```
-DATABASE_URL=postgresql://postgres.[project-ref]:YOUR_PASSWORD@...
+DATABASE_URL=postgresql://postgres.[project-ref]:YOUR_PASSWORD@aws-0-[region].pooler.supabase.com:5432/postgres
+PORT=3001
+ANTHROPIC_API_KEY=your-key-here
 ```
 
-**Important:** Use port **5432** (direct/session) for migrations and ingest. The transaction pooler (port 6543) is for deployed serverless APIs only.
+**Important:** Use session pooler port **5432** for local migrate/ingest. Use transaction pooler port **6543** + `?pgbouncer=true` for the deployed Railway API.
 
 ---
 
