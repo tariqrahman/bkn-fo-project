@@ -5,7 +5,9 @@ import { fileURLToPath } from "node:url";
 const packageDir = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(packageDir, "../../..");
 
-config({ path: resolve(projectRoot, ".env") });
+if (!process.env.DATABASE_URL) {
+  config({ path: resolve(projectRoot, ".env") });
+}
 
 export function getDatabaseUrl(databaseUrl?: string): string {
   const url = databaseUrl ?? process.env.DATABASE_URL;

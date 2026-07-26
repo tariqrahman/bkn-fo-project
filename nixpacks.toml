@@ -2,6 +2,9 @@
 [variables]
 NIXPACKS_NODE_PACKAGE_MANAGER = "npm"
 
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
 [phases.install]
 cmds = ["npm install"]
 

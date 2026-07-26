@@ -1,6 +1,6 @@
 import cors from "@fastify/cors";
 import { computeCapSummary, CAP_THRESHOLD_METRICS } from "@nets/db/compute-cap-room";
-import { createDb } from "@nets/db";
+import { getDb } from "./db.js";
 import { contractSeasons, playerCapSeasons, players, teamCapMetrics, teams } from "@nets/db/schema";
 import { asc, eq } from "drizzle-orm";
 import Fastify from "fastify";
@@ -8,20 +8,21 @@ import { getTeamDraftPicks } from "./get-team-draft-picks.js";
 import { getTeamDepthChart } from "./get-team-depth-chart.js";
 import { getTeamInsights, InsightsError } from "./insights/get-team-insights.js";
 
-const db = createDb();
-
 const app = Fastify({ logger: true });
 
 await app.register(cors, {
   origin: process.env.CORS_ORIGIN ?? true,
 });
 
-app.get("/api/health", async () => ({ status: "ok" }));
+app.get("/api/health", async () => ({
+  status: "ok",
+  database: process.env.DATABASE_URL ? "configured" : "missing",
+}));
 
 app.get<{ Params: { teamId: string } }>("/api/teams/:teamId/payroll", async (request, reply) => {
   const { teamId } = request.params;
 
-  const team = await db.query.teams.findFirst({
+  const team = await getDb().query.teams.findFirst({
     where: eq(teams.id, teamId.toUpperCase()),
   });
 
@@ -29,7 +30,7 @@ app.get<{ Params: { teamId: string } }>("/api/teams/:teamId/payroll", async (req
     return reply.status(404).send({ error: `Team ${teamId} not found` });
   }
 
-  const capSeasonRows = await db
+  const capSeasonRows = await getDb()
     .select({
       spotracId: playerCapSeasons.spotracId,
       displayName: playerCapSeasons.displayName,
@@ -49,13 +50,13 @@ app.get<{ Params: { teamId: string } }>("/api/teams/:teamId/payroll", async (req
   const hasCapData = capSeasonRows.length > 0;
 
   const seasonRows = hasCapData
-    ? await db
+    ? await getDb()
         .select({ season: playerCapSeasons.season })
         .from(playerCapSeasons)
         .where(eq(playerCapSeasons.teamId, team.id))
         .groupBy(playerCapSeasons.season)
         .orderBy(asc(playerCapSeasons.season))
-    : await db
+    : await getDb()
         .select({ season: contractSeasons.season })
         .from(contractSeasons)
         .where(eq(contractSeasons.teamId, team.id))
@@ -64,7 +65,7 @@ app.get<{ Params: { teamId: string } }>("/api/teams/:teamId/payroll", async (req
 
   const seasons = seasonRows.map((row) => row.season);
 
-  const roster = await db.query.players.findMany({
+  const roster = await getDb().query.players.findMany({
     where: eq(players.currentTeamId, team.id),
     with: {
       contractSeasons: {
@@ -153,7 +154,7 @@ app.get<{ Params: { teamId: string } }>("/api/teams/:teamId/payroll", async (req
   }> = [];
 
   try {
-    const capMetricRows = await db
+    const capMetricRows = await getDb()
       .select({
         metric: teamCapMetrics.metric,
         season: teamCapMetrics.season,
@@ -200,9 +201,9 @@ app.get<{ Params: { teamId: string } }>("/api/teams/:teamId/depth-chart", async 
   const { teamId } = request.params;
 
   try {
-    const result = await getTeamDepthChart(db, teamId);
+    const result = await getTeamDepthChart(getDb(), teamId);
     if (!result) {
-      const team = await db.query.teams.findFirst({
+      const team = await getDb().query.teams.findFirst({
         where: eq(teams.id, teamId.toUpperCase()),
       });
       if (!team) {
@@ -226,9 +227,9 @@ app.get<{ Params: { teamId: string } }>("/api/teams/:teamId/draft-picks", async 
   const { teamId } = request.params;
 
   try {
-    const result = await getTeamDraftPicks(db, teamId);
+    const result = await getTeamDraftPicks(getDb(), teamId);
     if (!result) {
-      const team = await db.query.teams.findFirst({
+      const team = await getDb().query.teams.findFirst({
         where: eq(teams.id, teamId.toUpperCase()),
       });
       if (!team) {
@@ -255,7 +256,7 @@ app.get<{ Params: { teamId: string }; Querystring: { refresh?: string } }>(
     const refresh = request.query.refresh === "true" || request.query.refresh === "1";
 
     try {
-      const result = await getTeamInsights(db, teamId, { refresh });
+      const result = await getTeamInsights(getDb(), teamId, { refresh });
       return reply.send(result);
     } catch (error) {
       if (error instanceof InsightsError) {
@@ -269,5 +270,9 @@ app.get<{ Params: { teamId: string }; Querystring: { refresh?: string } }>(
 
 const port = Number(process.env.PORT ?? 3001);
 const host = process.env.HOST ?? "0.0.0.0";
+
+console.log(
+  `[api] listening on ${host}:${port} (DATABASE_URL ${process.env.DATABASE_URL ? "set" : "MISSING"})`,
+);
 
 await app.listen({ port, host });
